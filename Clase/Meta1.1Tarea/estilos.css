@@ -1,0 +1,87 @@
+/* Estilos del Encabezado y Carrusel */
+.encabezado {
+    padding: 0; 
+    margin: 0; 
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100vh; 
+    width: 100vw; 
+    overflow: hidden; 
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+/* Ajuste del tamaño del carrusel */
+.encabezado .carousel {
+    width: 100%; 
+    height: 100%; 
+}
+
+/* Ajuste del tamaño de las imágenes del carrusel */
+.encabezado .carousel-item img {
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover; 
+}
+
+/* Estilo del texto en el carrusel */
+.carousel-caption {
+    position: absolute;
+    bottom: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    border-radius: 5px;
+    width: 90%; 
+    max-width: 800px; /
+}
+
+/* Estilo del título */
+.carousel-caption h5 {
+    font-size: 2.5em; 
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+.carousel-caption p {
+    font-size: 1.5em; 
+}
+
+/*Configuración de las tarjetas*/
+.card-custom {
+    border: 2px solid #000000;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card-custom:hover {
+    transform: scale(1.05);
+}
+
+.card-custom .card-title {
+    color: #000000;
+}
+
+
+.card-custom .btn-custom {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+}
+
+.card-custom .btn-custom:hover {
+    background-color: #000000;
+}
+
+.card-custom .card-img-top {
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+}

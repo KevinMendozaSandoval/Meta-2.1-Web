@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Números Aleatorios</title>
+    <meta charset="utf-8">
+</head>
+<h1>Generador de Números Aleatorios</h1>
+
+<label for="n">Ingresa el valor de N:</label>
+<input type="number" id="n" value="10">
+<button onclick="generarNumeros()">Generar</button>
+
+<h2>Resultados</h2>
+<p id="resultado"></p>
+
+<script lang="javascript">
+    function generarNumeros() {
+        let n = parseInt(document.getElementById('n').value) || 10;
+        let menores = 0;
+        let mayores = 0;
+
+        for (let i = 0; i < n; i++) {
+            let num = Math.floor(Math.random() * 100);
+            console.log(num);
+            if (num < 50) {
+                menores++;
+            } else {
+                mayores++;
+            }
+        }
+
+        let resultado = `Total de números generados: ${n}<br>`;
+        resultado += `Porcentaje de números menores a 50: ${(menores / n) * 100}%<br>`;
+        resultado += `Porcentaje de números mayores o iguales a 50: ${(mayores / n) * 100}%`;
+
+        document.getElementById('resultado').innerHTML = resultado;
+    }
+</script>
+
+</html>
